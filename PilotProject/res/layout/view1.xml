@@ -13,14 +13,14 @@
     
  	<EditText
  	    android:id="@+id/searchbox"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_margin="5dp"
-        android:padding="3dp"
-	    android:layout_weight="1"
+ 	    android:layout_width="274dp"
+ 	    android:layout_height="50dp"
+ 	    android:layout_margin="5dp"
  	    android:background="@drawable/rounded_edittext"
- 	    android:hint="@string/Vvedite" />
-	<!--  
+ 	    android:hint="@string/Vvedite"
+ 	    android:padding="3dp" />
+
+	  
 	<ListView
 	    android:id="@id/android:list"
 	    android:layout_width="match_parent"
@@ -30,18 +30,8 @@
 	    android:filterTouchesWhenObscured="false"
 	    android:textFilterEnabled="true" >
   	    
-	</ListView>  -->
-	
-	<de.timroes.android.listview.EnhancedListView
-	    	    android:id="@id/android:list"
-	    android:layout_width="match_parent"
-	    android:layout_height="fill_parent"
-	    android:layout_weight="100"
-	    android:choiceMode="multipleChoice"
-	    android:filterTouchesWhenObscured="false"
-	    android:textFilterEnabled="true" 
-	    
-	    />
+	</ListView> 
+
     
 
 	<LinearLayout 
