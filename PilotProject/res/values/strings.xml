@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- Цвета для экрана -->
+    <color name="all_tan">#D2B48C</color>
+    <color name="all_floralwhite">#FFFAF0</color>
+    <color name="all_steelblue">#4682B4</color>
+    <color name="all_lightblue">#ADD8E6</color>
+    <color name="all_white">#FFFFFF</color>
+    <color name="LightSteelBlue2">#BCD2EE</color>
+
+    <!-- Цвета для кпопки -->
+    <color name="button_focused_color_start">#7FA40E</color>
+    <color name="button_focused_color_end">#79C83F</color>
+    <color name="button_normal_color_start">#1f71df</color>
+    <color name="button_normal_color_end">#619be9</color>
+    <color name="button_pressed_color_start">#7FA40E</color>
+    <color name="button_pressed_color_end">#79C83F</color>
+    <color name="White">#FFFFFF</color>
+
+    <!-- Переменные -->
+    <string name="app_name">PilotProject</string>
+    <string name="action_settings">Settings</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="autorization"><i><big><big>Авторизация</big></big></i></string>
+    <string name="Button">ОК</string>
+    <string name="title_activity_main_activity1">MainActivity1</string>
+    <string name="pleaseEnter"><i>Введите пароль</i></string>
+    <string name="updatedb">UPDATEDB</string>
+    <string name="Vvedite">Введите KKS</string>
+    <string name="title_activity_manager_ov">ManagerOV</string>
+    <string name="title_activity_edit_ov">EditOV</string>
+    <string name="Add_Button">Добавить</string>
+    <string name="Confirm_Button">Подтвердить</string>
+    <string name="Poisk">Поиск</string>
+    <string name="No_Button">Отмена</string>
+    <string name="Add2_Button">Добавить</string>
+    <string name="Yes_Button">Подтвердить</string>
+    <string name="Yess_Button">Сохранить</string>
+    <string name="Add22_Button">Добав.</string>
+    <string name="Yesss_Button">Сохр.</string>
+    <string name="Poisk2">Поиск</string>
+    <string name="NameGroop">Введите новое имя группы</string>
+    <string name="Update">Загрузить базу</string>
+    <string name="Button_Pog">Подтвердить</string>
+    <string name="Delete">Удалить</string>
+    <string name="Edit">Редактир.</string>
+
+</resources>
