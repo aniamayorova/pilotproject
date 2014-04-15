@@ -53,6 +53,10 @@
             android:name="ru.example.pilotproject.MainActivity"
             android:label="@string/title_activity_main" >
         </activity>
+        <activity
+            android:name="ru.example.pilotproject.GroupScreen"
+            android:label="@string/title_activity_group_screen" >
+        </activity>
     </application>
 
 </manifest>
