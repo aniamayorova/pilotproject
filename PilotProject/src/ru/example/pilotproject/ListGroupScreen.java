@@ -1,6 +1,5 @@
 package ru.example.pilotproject;
 
-import android.app.Activity;
 import android.app.ListActivity;
 import android.content.Intent;
 import android.database.Cursor;
@@ -13,12 +12,12 @@ import android.view.View;
 import android.widget.AdapterView;
 import android.widget.AdapterView.OnItemClickListener;
 
-public class ManagerOV extends ListActivity {
+public class ListGroupScreen extends ListActivity {
 
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
-		setContentView(R.layout.ov);
+		setContentView(R.layout.list_group);
 		
 		
 		BaseData db = new BaseData(this);
@@ -45,7 +44,7 @@ public class ManagerOV extends ListActivity {
 			public void onItemClick(AdapterView<?> arg0, View arg1, int arg2,
 					long arg3) {
 				Intent inte = new Intent().setClassName("ru.example.pilotproject",
-						"ru.example.pilotproject.EditOV");
+						"ru.example.pilotproject.EditScreen");
 				inte.putExtra("group", arg3);
 				startActivity(inte);
 				
@@ -62,7 +61,7 @@ public class ManagerOV extends ListActivity {
 	
 	public void Add_Object(View v) { 
 	startActivity(new Intent().setClassName("ru.example.pilotproject",
-			"ru.example.pilotproject.EditOV"));
+			"ru.example.pilotproject.EditScreen"));
 	}
 
 }

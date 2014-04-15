@@ -17,13 +17,13 @@ import android.widget.Button;
 import android.widget.EditText;
 import android.widget.Toast;
 
-public class FirstScreen extends Activity {
+public class AuthenticationScreen extends Activity {
 
 	
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.autorization);
+        setContentView(R.layout.authentication);
     }
 
 
@@ -41,7 +41,7 @@ public class FirstScreen extends Activity {
     	
         if	(str.equals("1")) {
         	startActivity(new Intent().setClassName("ru.example.pilotproject",
-        			"ru.example.pilotproject.ManagerOV"));
+        			"ru.example.pilotproject.ListGroupScreen"));
         return;	}
         Toast.makeText(this,"Неверный пароль", Toast.LENGTH_LONG).show();
     }

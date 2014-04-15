@@ -22,11 +22,9 @@
     <string name="app_name">PilotProject</string>
     <string name="action_settings">Settings</string>
     <string name="hello_world">Hello world!</string>
-    <string name="autorization"><i><big><big>Авторизация</big></big></i></string>
     <string name="Button">ОК</string>
     <string name="title_activity_main_activity1">MainActivity1</string>
     <string name="pleaseEnter"><i>Введите пароль</i></string>
-    <string name="updatedb">UPDATEDB</string>
     <string name="Vvedite">Введите KKS</string>
     <string name="title_activity_manager_ov">ManagerOV</string>
     <string name="title_activity_edit_ov">EditOV</string>
@@ -45,5 +43,9 @@
     <string name="Button_Pog">Подтвердить</string>
     <string name="Delete">Удалить</string>
     <string name="Edit">Редактир.</string>
+    <string name="authentication"><i><big><big>Аутентификация</big></big></i></string>
+    <string name="title_activity_kksscreen">KKSScreen</string>
+    <string name="title_activity_group_screen">GroupScreen</string>
+    <string name="title_activity_main">MainActivity</string>
 
 </resources>

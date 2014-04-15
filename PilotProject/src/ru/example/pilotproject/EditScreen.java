@@ -15,7 +15,7 @@ import android.view.View;
 import android.widget.ArrayAdapter;
 import android.widget.EditText;
 
-public class EditOV extends ListActivity {
+public class EditScreen extends ListActivity {
 	
 	ArrayAdapter<String> kksListAdapter;
 	ArrayList<String> kksList;
@@ -85,7 +85,7 @@ public class EditOV extends ListActivity {
 	}
     
     public void Add_Click(View v) {     	
-     	Intent intent = new Intent(this, TwoScreen.class);
+     	Intent intent = new Intent(this, KKSScreen.class);
     	startActivityForResult(intent.putExtra("KKS", kksList), 1);
     	//startActivity(new Intent().setClassName("ru.example.pilotproject",
     		//	"ru.example.pilotproject.TwoScreen"), par);
@@ -99,8 +99,7 @@ public class EditOV extends ListActivity {
     }
     
     public void Cancel_Click(View v) { 
-    //	startActivity(new Intent().setClassName("ru.example.pilotproject",
-    	//		"ru.example.pilotproject.ManagerOV"));
+
     	super.onBackPressed();
     	}
 

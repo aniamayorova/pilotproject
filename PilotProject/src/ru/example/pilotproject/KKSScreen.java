@@ -2,7 +2,6 @@ package ru.example.pilotproject;
 
 import java.util.ArrayList;
 import java.util.Arrays;
-import java.util.List;
 
 import android.app.ListActivity;
 import android.content.Intent;
@@ -23,7 +22,7 @@ import android.widget.AdapterView.OnItemClickListener;
 import android.widget.FilterQueryProvider;
 import android.widget.TextView;
 
-public class TwoScreen extends ListActivity {
+public class KKSScreen extends ListActivity {
 	
 			
 	@Override
@@ -31,7 +30,7 @@ public class TwoScreen extends ListActivity {
 		try{
 	
 			super.onCreate(savedInstanceState);
-			setContentView(R.layout.view1);
+			setContentView(R.layout.kks);
 		
 			//Создание списка View для теста
 			
@@ -106,13 +105,13 @@ public class TwoScreen extends ListActivity {
 				}
 			});
 			
-			findViewById(R.id.b_cancel).setOnClickListener(new OnClickListener() {
-				
-				@Override
-				public void onClick(View v) {
-					Back();
-				}
-			});
+//			findViewById(R.id.b_cancel).setOnClickListener(new OnClickListener() {
+//				
+//				@Override
+//				public void onClick(View v) {
+//					Back();
+//				}
+//			});
 			findViewById(R.id.b_save).setOnClickListener(new OnClickListener() {
 				
 				@Override

@@ -16,7 +16,7 @@
         android:label="@string/app_name"
         android:theme="@style/AppTheme" >
         <activity
-            android:name="ru.example.pilotproject.FirstScreen"
+            android:name="ru.example.pilotproject.AuthenticationScreen_"
             android:label="@string/app_name" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -25,16 +25,33 @@
             </intent-filter>
         </activity>
         <activity
-            android:name="ru.example.pilotproject.TwoScreen"
+            android:name="ru.example.pilotproject.KKSScreen_"
             android:label="@string/title_activity_main_activity1" >
         </activity>
         <activity
-            android:name="ru.example.pilotproject.ManagerOV"
+            android:name="ru.example.pilotproject.ListGroupScreen_"
             android:label="@string/title_activity_manager_ov" >
         </activity>
         <activity
-            android:name="ru.example.pilotproject.EditOV"
+            android:name="ru.example.pilotproject.EditScreen_"
             android:label="@string/title_activity_edit_ov" >
+        </activity>
+        <activity
+            android:name="ru.example.pilotproject.GroupScreen_"
+            android:label="@string/title_activity_group_screen" >
+        </activity>
+        <activity
+            android:name="ru.example.pilotproject.MainActivity_"
+            android:label="@string/title_activity_main" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="ru.example.pilotproject.MainActivity"
+            android:label="@string/title_activity_main" >
         </activity>
     </application>
 

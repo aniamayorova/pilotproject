@@ -9,7 +9,7 @@
     android:paddingTop="@dimen/activity_vertical_margin"
     android:orientation="vertical"
     android:background="@color/all_lightblue"
-    tools:context=".TwoScreen" >
+    tools:context=".KKSScreen" >
     
  	<EditText
  	    android:id="@+id/searchbox"
@@ -41,19 +41,11 @@
 	    android:orientation="horizontal">
 
 	<Button
-	    android:id="@+id/b_cancel"
-	    android:layout_width="0dp"
-	    android:layout_height="wrap_content"
-	    android:layout_weight="1"
-	    android:text="@android:string/cancel" />
-
-	<Button
 	    android:id="@+id/b_save"
-	    android:layout_width="0dp"
-	    android:layout_height="wrap_content"
-	    android:layout_weight="1"
+	    android:layout_width="match_parent"
+	    android:layout_height="40dp"
 	    android:onClick="Save_KKS"
-	    android:text="@android:string/ok" />
+	    android:text="@string/Button_Pog" />
 	    	    
 	</LinearLayout>
 
