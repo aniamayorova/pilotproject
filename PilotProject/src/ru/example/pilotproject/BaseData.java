@@ -15,7 +15,7 @@ public class BaseData extends SQLiteOpenHelper {
 	
 
 	public BaseData(Context context) {
-		super(context, BDNAME , null , 7);
+		super(context, BDNAME , null , 9);
 		// TODO Auto-generated constructor stub
 	}
 
@@ -29,7 +29,7 @@ public class BaseData extends SQLiteOpenHelper {
 				+ " Name TEXT, Descr TEXT, ActId INTEGER);");
 		db.execSQL("CREATE TABLE " + ACTION_TABLE + " (ActId INTEGER, Action TEXT);");
 		db.execSQL("CREATE TABLE " + VIEW_TABLE + " (GroupID INTEGER, KKS INTEGER);");
-		db.execSQL("CREATE TABLE " + GROUP_TABLE + " ( _id INTEGER PRIMARY KEY AUTOINCREMENT,GroupName TEXT);");
+		db.execSQL("CREATE TABLE " + GROUP_TABLE + " ( _id INTEGER PRIMARY KEY AUTOINCREMENT, GroupName TEXT UNIQUE);");
 		
 	//	for(int i = 0; i < 100; i++){
 		//	db.execSQL("INSERT INTO " + BASE_TABLE + " VALUES ( "+i+", \"KKS_"+i+"\", \"Short name "+i+"\", \"Description "+i+"\", 0);");

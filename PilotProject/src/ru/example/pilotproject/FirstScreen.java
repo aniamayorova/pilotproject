@@ -13,6 +13,7 @@ import android.os.Bundle;
 import android.util.Log;
 import android.view.Menu;
 import android.view.View;
+import android.widget.Button;
 import android.widget.EditText;
 import android.widget.Toast;
 
@@ -46,6 +47,7 @@ public class FirstScreen extends Activity {
     }
     public void upd(View v) {
     	
+    	((Button)v).setActivated(false);
     	new Thread(new Runnable() {
 			
 			@Override

@@ -1,6 +1,7 @@
 package ru.example.pilotproject;
 
 import android.app.Activity;
+import android.app.ListActivity;
 import android.content.Intent;
 import android.database.Cursor;
 import android.database.sqlite.SQLiteDatabase;
@@ -9,8 +10,10 @@ import android.support.v4.widget.SimpleCursorAdapter;
 import android.util.Log;
 import android.view.Menu;
 import android.view.View;
+import android.widget.AdapterView;
+import android.widget.AdapterView.OnItemClickListener;
 
-public class ManagerOV extends Activity {
+public class ManagerOV extends ListActivity {
 
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
@@ -35,6 +38,19 @@ public class ManagerOV extends Activity {
 		Log.i("PILOPRG", String.format("%s", cursor.getCount()));
 		
 		final SimpleCursorAdapter adapter = new SimpleCursorAdapter(this, R.layout.text_list_item, cursor, from, to, 0);
+		setListAdapter(adapter);
+		getListView().setOnItemClickListener(new OnItemClickListener() {
+
+			@Override
+			public void onItemClick(AdapterView<?> arg0, View arg1, int arg2,
+					long arg3) {
+				Intent inte = new Intent().setClassName("ru.example.pilotproject",
+						"ru.example.pilotproject.EditOV");
+				inte.putExtra("group", arg3);
+				startActivity(inte);
+				
+			}
+		});
 	}
 
 	@Override
